@@ -42,7 +42,7 @@ function highlightSelectedText() {
             span.style.backgroundColor = highlightColor;
             span.style.color = "black";
 
-            onst existingHighlights = document.querySelectorAll('.highlighted-text');
+            const existingHighlights = document.querySelectorAll('.highlighted-text');
             existingHighlights.forEach((highlight) => {
                 highlight.replaceWith(...highlight.childNodes);
             });
