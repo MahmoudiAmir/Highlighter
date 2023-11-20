@@ -1,4 +1,4 @@
-# Highlighter
+# Highlighter Extension Project (FALL 1402)
 
 ## :dart: About ##
 
