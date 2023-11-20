@@ -42,6 +42,11 @@ function highlightSelectedText() {
             span.style.backgroundColor = highlightColor;
             span.style.color = "black";
 
+            onst existingHighlights = document.querySelectorAll('.highlighted-text');
+            existingHighlights.forEach((highlight) => {
+                highlight.replaceWith(...highlight.childNodes);
+            });
+
             // Check if the selection spans across different paragraphs
             if (range.startContainer.parentElement.tagName.toLowerCase() === 'p' &&
                 range.endContainer.parentElement.tagName.toLowerCase() === 'p' &&
