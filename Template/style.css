@@ -1,0 +1,165 @@
+body{
+    max-width: 100vw;
+    max-height: 20vh;
+    
+}
+
+.parageraf{
+    margin: 10rem 12rem;
+    direction: rtl;
+    font-family: inherit;
+   font-size: 3.6rem;
+   font-weight: 400;
+   line-height: 4rem;
+   letter-spacing: .1rem;
+  text-align: center;
+  color: black;
+
+}
+.box{
+width: 18.889rem;
+height: 18.9rem;
+border-radius: 1rem;
+background-color:#E3E8D9;
+display: grid;
+grid-template-columns: auto auto  auto auto;
+background-color: #E3E8D9;
+
+
+}
+.green{
+width: 2.743rem;
+height: 3.406rem;
+
+border-radius: 1rem;
+background-color: #177737;
+}
+
+.tag{
+width: 56.196rem;
+height: 12.528rem;
+top: 43.6rem;
+left: 43.9rem;
+background-color: #00938B;
+margin: 1rem 1rem;
+}
+.matnTag{
+color: aliceblue;
+ font-family: sans-serif;
+font-size: 2.6rem;
+font-weight: 400;
+line-height: 3.1rem;
+letter-spacing: 0em;
+text-align: left;
+margin: 1rem 2rem;
+}
+.subtag{
+ width: 10.861rem;
+height: 3.107rem;
+top: 44.201rem;
+left: 61.137rem;
+border-radius: 1rem;
+background-color: #E3E8D9;
+margin: 1rem 2rem;
+}
+.headerTag{
+    display: flex;
+    justify-content: space-between;
+}
+.imgTag{
+    color: #000000;
+    width: 1.084rem;
+    height: 1.414rem;
+    margin: .7rem 1rem;
+
+}
+.imgTag2{
+    color: #000000;
+    width: 1.084rem;
+    height: 1.414rem;
+    margin: .7rem 1rem;
+}
+.sub1Tag{
+ font-family: sans-serif;
+font-size: 2.4rem;
+font-weight: 400;
+line-height: 2.9rem;
+letter-spacing: 0em;
+text-align: center;
+margin: -3rem 2rem ;
+}
+.exampleTag{
+width: 52.609rem;
+height: 5.212rem;
+top: 49.513rem;
+left: 45.096rem;
+border-radius: 1rem;
+background-color: #E3E8D9;
+margin: 1rem 1rem;
+}
+.matnTag2{
+font-family: sans-serif;
+font-size: 2.6rem;
+font-weight: 400;
+line-height: 3.1rem;
+letter-spacing: .1em;
+margin: .5rem 1rem;
+
+}
+.editCard{
+display: flex;
+justify-content: space-between;
+width: 18.9rem;
+height: 5.1rem;
+top: 62.1rem;
+left: 88rem;
+border-radius: 1rem;
+background-color: #E3E8D9;
+
+}
+.copy{
+width: 3rem;
+height: 3rem;
+padding: .525rem .7rem .525rem .7rem;
+border: none;
+background-color: #E3E8D9;
+}
+.trash{
+width: 2rem;
+height: 2rem;
+border: .117rem;
+background-color: #E3E8D9;
+margin: 0rem 0;
+background-color: none;
+}
+.trashImg{
+    width: 2rem;
+    height: 2.5rem;
+    margin: 1.2rem -2rem;
+    position: absolute;
+}
+.color{
+width: 3.2rem;
+height: 2.8rem;
+border-radius: 1rem;
+border: none;
+background-color:#E3E8D9; 
+}
+.colorImg{
+    position: absolute;
+    margin: 1rem -4rem;
+}
+.home{
+width: 2.5rem;
+height: 2.5rem;
+border: none;
+background-color: #E3E8D9;
+}
+.imgCopy{
+    position: absolute;
+ margin: .5rem -3rem;
+}
+.homeImg{
+    position: absolute;
+    margin: 1rem -4rem;
+}
