@@ -32,25 +32,32 @@ function highlightSelectedText() {
     const selection = window.getSelection();
 
     if (selection.rangeCount > 0) {
+        const highlightColor = document.getElementById("highlight-color").value;
+
         for (let i = 0; i < selection.rangeCount; i++) {
             const range = selection.getRangeAt(i);
-            const span = document.createElement("span");
-            span.classList.add("highlighted-text");
-
-            const highlightColor = document.getElementById("highlight-color").value;
-
-            span.style.backgroundColor = highlightColor;
-            span.style.color = "black";
 
             const existingHighlights = document.querySelectorAll('.highlighted-text');
+
             existingHighlights.forEach((highlight) => {
-                highlight.replaceWith(...highlight.childNodes);
+                const highlightRange = document.createRange();
+                highlightRange.selectNodeContents(highlight);
+
+                // مقایسه مرزهای دو Range
+                if (
+                    range.compareBoundaryPoints(Range.START_TO_START, highlightRange) <= 0 &&
+                    range.compareBoundaryPoints(Range.END_TO_END, highlightRange) >= 0
+                ) {
+                    highlight.style.backgroundColor = highlightColor;
+                }
             });
 
             // Check if the selection spans across different paragraphs
-            if (range.startContainer.parentElement.tagName.toLowerCase() === 'p' &&
+            if (
+                range.startContainer.parentElement.tagName.toLowerCase() === 'p' &&
                 range.endContainer.parentElement.tagName.toLowerCase() === 'p' &&
-                range.startContainer.parentElement !== range.endContainer.parentElement) {
+                range.startContainer.parentElement !== range.endContainer.parentElement
+            ) {
                 // If the selection spans across paragraphs, wrap each paragraph individually
                 const startParagraph = range.startContainer.parentElement;
                 const endParagraph = range.endContainer.parentElement;
@@ -81,16 +88,19 @@ function highlightSelectedText() {
                 endRange.insertNode(endSpan);
             } else {
                 // If the selection is within a single paragraph, or spans within the same paragraph, wrap the selection with the span
+                const span = document.createElement("span");
+                span.classList.add("highlighted-text");
+                span.style.backgroundColor = highlightColor;
+                span.style.color = "black";
                 range.surroundContents(span);
             }
         }
 
         selection.removeAllRanges();
     }
-
-    highlightBtn.style.display = "none";
-    highlightBtn.classList.remove("btnEntrance");
 }
+
+
 highlightBtn.addEventListener("click", highlightSelectedText);
 
 
