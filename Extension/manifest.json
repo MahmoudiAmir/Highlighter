@@ -1,23 +1,20 @@
 {
-    "manifest_version": 2,
-    "name": "Highlighter Extension",
-    "version": "1.0",
-    "description": "A simple text highlighter extension",
-    "icons": {
-      "48": "images/iconEx.png"
-    },
-    "permissions": [
-      "activeTab",
-      "storage"
+  "manifest_version": 3,
+  "name": "Highlighter",
+  "version": "1.0",
+  "description": "Highlight text on websites",
+  "permissions": [
+        "contextMenus",
+        "scripting",
+        "storage"
     ],
-    "browser_action": {
-    
-      "default_popup": "index.html"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ]
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "images/iconEX.png"
+    }
+  },
+  "icons": {
+    "48": "images/iconEX.png"
   }
+}
