@@ -43,5 +43,3 @@
   **Third : Choose Load unpacked** 
  
   **Enjoy Extension 😉** 
-  
-  Hello
