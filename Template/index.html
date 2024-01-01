@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+
     <div class="container">
         <h1>Highlighte Selected Text</h1>
         <hr>
@@ -20,10 +22,7 @@
         
  </div>
     <button id="highlight-btn"><img style="width:95%;" src="images/cursor-icon.svg" alt="Icon"></button>
-    <input type="color" id="highlight-color" value="#ffff00">
       </div>
-
-      
 
 
 
@@ -40,46 +39,63 @@
         <section class="orange size"> </section>
         </div>
         <hr class="hr">
-		
-        <div class="eddit">
-
         <div class="editbox">
-        <input class="size3 " type="color" value="#ffffff">
-        <img class="plus size2" src="images/icons8-plus-24.png" alt="">
-
+        <input class="size3" type="color" id="highlight-color" value="#177737">
+        <section class="size2"><img class="plus size2" src="/images/images.png" alt=""></section>
+        
         </div>
-
-        <div class="editbox">
-            <input class="size3" type="button" value="">
-            <img class="plus size2" src="images/icons8-trash-24.png" alt="">
-            </div>
-
-            <div class="editbox">
-             <input type="button" class="size3">
-                <img class="plus size2" src="images/icons8-copy-24.png" alt="">
-                </div>
-           <div class="editbox">
-                <input class="size3" type="button" value="">
-                <img class="plus size2 " src="images/Vector (3).png" alt="">
-            </div>
-    </div>
         </div>
-        <div class="tag">
+        <div class="tag" id="tagpanel">
             <div class="headerTag">
         <h3 class="matnTag" aria-placeholder="">Enter tag...</h3>
         <div class="subtag">
             <img class="imgTag" src="images/Vector (1).png" alt="">
             <h3 class="sub1Tag">tag</h3>
         </div>
-        <img class="imgTag2" src="images/Vector (1).png" alt="">
+        <img class="imgTag2" id="quitt" src="images/Vector (1).png" alt="">
         </div>
         <textarea placeholder="Take a note..." class="exampleTag"></textarea>
         
+
+
+        
         </div>
+        <div class="editCard" id="editCardMenu">
+            <div>
+        <input class="copy" type="button" value="">
+        <img class="copy imgCopy" src="images/Group (1).png" alt="">
+        </div>
+        <div>
+        
+        <input class="trash" type="button" value="">
+        <img class="trash trashImg" src="images/Vector11 (1).png" alt="">
+        </div>
+        <div>
+        
+        <input class="color" type="button" value="">
+        <img class="color colorImg" src="images/Rectangle 13.png" alt="">
+        </div>
+        <div>
+        
+       <input class="home" type="button" value="">
+        <img class="home homeImg" src="images/Vector (3).png" alt="">
+        </div>
+        </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
       
-        </div>
-   
-  <script src="script.js"></script>
+  <script src="content.js"></script>
 </body>
 </html>
 
