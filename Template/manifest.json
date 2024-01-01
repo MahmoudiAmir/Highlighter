@@ -1,0 +1,23 @@
+{
+     "manifest_version": 3,
+     "name": "Highlighter",
+     "version": "1.0",
+     "description": "Highlight text on websites",
+     "permissions": [
+           "contextMenus",
+           "scripting",
+           "storage"
+       ],
+       "action": {
+       "default_popup": "popup/popup.html",
+       "default_icon": {
+         "48": "images/iconEX.png"
+       }
+     },
+     "background": {
+         "service_worker": "background.js"
+     },
+     "icons": {
+       "48": "images/iconEX.png"
+     }
+   }
